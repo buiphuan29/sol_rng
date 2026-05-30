@@ -1,0 +1,6 @@
+{
+  "name": "Sol RNG - Cosmic Auras",
+  "description": "An immersive Sol's RNG game featuring rare auras, secure trading, active marketplace, dynamic leaderboard, daily quests, and custom audio/haptics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

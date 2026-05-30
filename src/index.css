@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* ADVANCED GRAPHICAL EFFECT UTILITIES FOR SOL RNG CORES */
+
+/* Animated Cybernetic Scanlines */
+.cyber-scanline {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg, 
+    rgba(255, 0, 0, 0.06), 
+    rgba(0, 255, 0, 0.02), 
+    rgba(0, 0, 255, 0.06)
+  );
+  background-size: 100% 4px, 6px 100%;
+}
+
+/* Floating Animation */
+@keyframes hoverFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.5deg); }
+}
+.animate-quantum-float {
+  animation: hoverFloat 6s ease-in-out infinite;
+}
+
+/* Pulsating Core Glow */
+@keyframes radialPulse {
+  0%, 100% { opacity: 0.25; filter: saturate(100%) blur(40px); }
+  50% { opacity: 0.45; filter: saturate(150%) blur(60px); }
+}
+.animate-core-pulse {
+  animation: radialPulse 4s ease-in-out infinite;
+}
+
+/* Cosmic Grid Backdrop */
+.retro-grid-backdrop {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(99, 102, 241, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(99, 102, 241, 0.025) 1px, transparent 1px);
+}
+
+/* Glitch Text Shimmer */
+@keyframes glitchText {
+  0% { text-shadow: 1px 1px 0 rgba(229,29,72,0.3), -1px -1px 0 rgba(79,70,229,0.3); }
+  50% { text-shadow: -1.5px 1px 0 rgba(229,29,72,0.5), 1.5px -1.5px 0 rgba(79,70,229,0.5); }
+  100% { text-shadow: 1px -1px 0 rgba(229,29,72,0.3), -1px 1px 0 rgba(79,70,229,0.3); }
+}
+.animate-glitch-shimmer {
+  animation: glitchText 1.5s infinite steps(2);
+}
+
+/* Glowing Border Sweep */
+.glow-card-border {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.glow-card-border:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+}
+
